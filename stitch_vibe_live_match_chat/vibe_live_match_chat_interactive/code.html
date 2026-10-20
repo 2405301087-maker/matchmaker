@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+
+<html lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&amp;family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@100..900&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}
+@keyframes soundwave {
+  0%, 100% { height: 4px; }
+  50% { height: 14px; }
+}
+.wave-bar-1 { animation: soundwave 1s ease-in-out infinite; }
+.wave-bar-2 { animation: soundwave 0.8s ease-in-out infinite 0.2s; }
+.wave-bar-3 { animation: soundwave 1.1s ease-in-out infinite 0.4s; }
+</style><script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{"colors":{"error":"#ba1a1a","outline":"#777587","surface-container-highest":"#dfe1f9","tertiary-container":"#006e4b","outline-variant":"#c7c4d8","error-container":"#ffdad6","primary-fixed":"#e2dfff","on-surface-variant":"#464555","on-surface":"#181a2c","secondary":"#006591","surface-container":"#ececff","surface-container-lowest":"#ffffff","tertiary-fixed":"#6ffbbe","inverse-surface":"#2c2f41","on-error":"#ffffff","tertiary":"#005338","on-tertiary-fixed":"#002113","background":"#fbf8ff","primary-fixed-dim":"#c3c0ff","on-primary-fixed-variant":"#3323cc","tertiary-fixed-dim":"#4edea3","on-tertiary-fixed-variant":"#005236","on-primary-fixed":"#0f0069","inverse-on-surface":"#f0efff","surface-dim":"#d7d8f0","on-secondary":"#ffffff","primary-container":"#4f46e5","on-primary-container":"#dad7ff","on-tertiary":"#ffffff","secondary-container":"#39b8fd","surface":"#fbf8ff","surface-container-low":"#f4f2ff","primary":"#3525cd","secondary-fixed":"#c9e6ff","on-error-container":"#93000a","on-secondary-fixed-variant":"#004c6e","surface-variant":"#dfe1f9","on-background":"#181a2c","surface-container-high":"#e5e6ff","on-primary":"#ffffff","surface-bright":"#fbf8ff","on-secondary-fixed":"#001e2f","secondary-fixed-dim":"#89ceff","on-secondary-container":"#004666","surface-tint":"#4d44e3","on-tertiary-container":"#67f4b7","inverse-primary":"#c3c0ff"},"borderRadius":{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},"spacing":{"gutter-sm":"1rem","margin-sm":"1rem","gutter":"1.5rem","space-xl":"2.5rem","space-lg":"1.5rem","margin":"2rem","space-xs":"0.25rem","space-md":"1rem","space-sm":"0.5rem"},"fontFamily":{"label-md":["Plus Jakarta Sans"],"display-lg":["Plus Jakarta Sans"],"label-sm":["Plus Jakarta Sans"],"body-sm":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"headline-xl":["Plus Jakarta Sans"],"headline-md":["Plus Jakarta Sans"],"label-lg":["Plus Jakarta Sans"],"display-lg-mobile":["Plus Jakarta Sans"],"headline-lg":["Plus Jakarta Sans"]},"fontSize":{"label-md":["12px",{"lineHeight":"16px","letterSpacing":"0.02em","fontWeight":"600"}],"display-lg":["48px",{"lineHeight":"56px","letterSpacing":"-0.03em","fontWeight":"800"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.04em","fontWeight":"700"}],"body-sm":["13px",{"lineHeight":"20px","letterSpacing":"0em","fontWeight":"400"}],"body-lg":["18px",{"lineHeight":"28px","letterSpacing":"-0.005em","fontWeight":"400"}],"body-md":["15px",{"lineHeight":"24px","letterSpacing":"0em","fontWeight":"400"}],"headline-xl":["32px",{"lineHeight":"40px","letterSpacing":"-0.02em","fontWeight":"700"}],"headline-md":["20px",{"lineHeight":"28px","letterSpacing":"-0.01em","fontWeight":"600"}],"label-lg":["14px",{"lineHeight":"20px","letterSpacing":"0.01em","fontWeight":"600"}],"display-lg-mobile":["36px",{"lineHeight":"44px","letterSpacing":"-0.025em","fontWeight":"800"}],"headline-lg":["24px",{"lineHeight":"32px","letterSpacing":"-0.015em","fontWeight":"700"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface antialiased min-h-screen flex flex-col justify-between selection:bg-primary selection:text-on-primary"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/90 backdrop-blur-md border-b border-outline-variant"><div class="h-16 w-full px-margin-sm md:px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-md min-w-0"><div class="flex items-center gap-space-sm flex-shrink-0"><img alt="VIBE Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida/AEtjO1WAxkvtLy4rR5WpohqZnlPRNp3w0GiXecJMNma2iOdVMy7H3uAUqKXZiin1ijbQQrqtEB5wXS0KjdvvSUi_D0HdmMqhG_PB6OphuQwH6Lsl6BsHsJZoeMGfu4wDs42vIo61AVU81WaH1SMEoB7EXsZ00mDGgmL3hNXMhmCYpTYreCoWc1cYo7L_om00SmD1W6yEHQa0Ai6M0hngrYz6KgZ_GLOlP5UatM2Arr85oA3NAo645dPPMNtQRglN"/><span class="font-headline-md text-headline-md tracking-tight font-extrabold text-on-surface select-none hidden sm:inline-block">VIBE</span></div><div class="inline-flex items-center gap-1.5 px-space-sm py-space-xs rounded-full bg-tertiary-fixed/30 border border-tertiary-fixed-dim/40 flex-shrink-0"><span class="relative flex h-2 w-2"><span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-tertiary opacity-75"></span><span class="relative inline-flex rounded-full h-2 w-2 bg-tertiary"></span></span><span class="font-label-sm text-label-sm text-tertiary uppercase tracking-wider font-bold">LIVE</span></div><div class="hidden md:flex items-center gap-1.5 pl-space-sm font-label-md text-label-md text-on-surface-variant flex-shrink-0 border-l border-outline-variant"><span class="text-secondary select-none font-bold">⚡</span><span id="headerOnlineCount">28,419 Online Now</span></div></div><div class="flex items-center gap-space-md flex-shrink-0"><div class="hidden lg:flex items-center gap-1.5 px-space-md py-space-xs rounded-full bg-surface-container-low border border-outline-variant font-label-sm text-label-sm text-on-surface-variant shadow-sm"><span class="material-symbols-outlined text-secondary text-[16px]">lock</span><span>Anonymous &amp; Encrypted • 100% Free</span></div><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center flex-shrink-0 shadow-sm ring-2 ring-primary/20"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-16 flex-1 flex flex-col items-center justify-center bg-background"><div class="flex flex-col w-full">
+<div class="w-full max-w-[1560px] mx-auto p-gutter-sm lg:p-gutter">
+<!-- Top Matched Room Header -->
+<div class="w-full bg-surface-container-lowest rounded-xl shadow-sm p-space-md mb-gutter flex flex-col sm:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md min-w-0">
+<div class="relative w-12 h-12 rounded-full overflow-hidden bg-primary-fixed flex items-center justify-center flex-shrink-0">
+<img class="w-full h-full object-cover transition-opacity duration-300" data-alt="Portrait photo of peer" id="peerHeaderAvatar" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9EUC6UElgXloKexYqjVR5u1b0Lchu2z756xP4F9gX4obRJOyDw-lZUX6VcKIv8qblmO2KQoOePkVzyqVZ-PlZqcokeneNPJj7pJns8xLGbbboBb73rqb2U7d603RdcF5Ex6rNv1goMqs3NMBwqAFe6YrozhT-rj1wiFyHwx0jRUJaxtPWEydxo8Ullhq4BBn4xlfl-lj995ldybp213-vfA72NzgsTd21p77ukvLKp3XH9w2qqaMZ5w"/>
+<span class="absolute bottom-0 right-0 w-3.5 h-3.5 bg-tertiary-fixed-dim rounded-full ring-2 ring-surface-container-lowest"></span>
+</div>
+<div class="flex flex-col min-w-0">
+<div class="flex items-center gap-space-xs flex-wrap">
+<span class="font-headline-md text-headline-md font-bold text-on-surface truncate" id="peerHeaderName">Connected with Luna ✨</span>
+<span class="inline-flex items-center gap-1 px-space-xs py-0.5 rounded-full bg-tertiary-fixed/30 text-tertiary font-label-sm text-label-sm">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary animate-pulse"></span>
+              Live Peer
+            </span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-space-xs mt-0.5">
+<span class="material-symbols-outlined text-[16px] text-secondary">verified_user</span>
+<span id="peerHeaderMeta">Anonymous P2P session • Berlin, DE (340km)</span>
+</p>
+</div>
+</div>
+<!-- Action Buttons Top Right -->
+<div class="flex items-center gap-space-sm w-full sm:w-auto justify-end">
+<button class="flex-1 sm:flex-none inline-flex items-center justify-center gap-1.5 px-space-md py-space-sm rounded-full bg-secondary-fixed text-on-secondary-fixed-variant hover:bg-secondary-container hover:text-on-secondary-container transition-all font-label-lg text-label-lg shadow-sm active:scale-95 cursor-pointer" id="topSkipBtn">
+<span class="material-symbols-outlined text-[20px]">fast_forward</span>
+<span>Skip Partner</span>
+<kbd class="hidden md:inline-block ml-1 px-1.5 py-0.5 text-[10px] bg-surface-container-lowest/80 text-on-surface rounded font-mono">ESC</kbd>
+</button>
+<button class="flex-1 sm:flex-none inline-flex items-center justify-center gap-1.5 px-space-md py-space-sm rounded-full bg-error-container text-on-error-container hover:bg-error hover:text-on-error transition-all font-label-lg text-label-lg shadow-sm active:scale-95 cursor-pointer" id="topEndBtn">
+<span class="material-symbols-outlined text-[20px]">call_end</span>
+<span>End Chat</span>
+</button>
+</div>
+</div>
+<!-- Main Body Area: Responsive Dual-Pane -->
+<div class="w-full grid grid-cols-1 lg:grid-cols-12 gap-gutter items-start">
+<!-- LEFT: Optional Video Section (7 cols) -->
+<div class="lg:col-span-7 flex flex-col gap-space-md">
+<!-- Video Tiles Stage -->
+<div class="relative w-full aspect-[4/3] sm:aspect-[16/10] bg-inverse-surface rounded-xl overflow-hidden shadow-xl flex flex-col justify-between p-space-md">
+<!-- Remote Video Tile (Luna / current peer) -->
+<div class="absolute inset-0 w-full h-full" id="remoteVideoContainer">
+<img class="w-full h-full object-cover transition-opacity duration-300" data-alt="First-person POV of partner" id="remoteVideoPlaceholder" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBro5yI50gS0K96HA7HIAT85Q2c1BOl4lgzHMNJm4NbEvPalI0zsyseR1C1RVCb6cY4i8d7wfZFcImm0vWoUIey9AoMXSdFDNGJiVsiKbPk_t07y_hAydN0SiDwPiSE89fhAsEm2Pxzg3N3oc_Ba3JOOQEl6wEUVg51pyu4HAdj8f_Cp-Tk-m8As6l7Rdi79EbgjbeAmcxzGuxSsQlQlJ8-rYltRJl2M2aF3LoYyN-RX2rKUx-FcVw86w"/>
+<!-- Fallback Text-only State (Hidden by default) -->
+<div class="hidden absolute inset-0 w-full h-full bg-inverse-surface flex-col items-center justify-center text-center p-space-lg" id="remoteAvatarPlaceholder">
+<div class="w-24 h-24 rounded-full bg-surface-container-highest/20 flex items-center justify-center mb-space-md">
+<span class="material-symbols-outlined text-inverse-on-surface text-[48px]">videocam_off</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-inverse-on-surface font-semibold" id="remoteCamOffTitle">Camera is off</h3>
+<p class="font-body-sm text-body-sm text-outline-variant mt-1" id="remoteCamOffDesc">Luna is connected in spontaneous text mode</p>
+</div>
+<!-- Video Overlay Gradient -->
+<div class="absolute inset-0 bg-gradient-to-t from-inverse-surface/80 via-transparent to-inverse-surface/40 pointer-events-none"></div>
+</div>
+<!-- Top Overlay HUD: Partner info & Remote Mic Indicator -->
+<div class="relative z-10 flex items-center justify-between w-full">
+<div class="inline-flex items-center gap-space-sm bg-inverse-surface/70 backdrop-blur-md px-space-md py-space-xs rounded-full">
+<span class="w-2.5 h-2.5 rounded-full bg-tertiary animate-ping"></span>
+<span class="font-label-md text-label-md text-inverse-on-surface font-bold" id="videoOverlayPeerName">Luna</span>
+<!-- Audio Wave Visualizer Simulation -->
+<div class="flex items-end gap-0.5 h-3.5 ml-1" id="audioWaveContainer" title="Partner audio active">
+<span class="w-1 bg-tertiary-fixed-dim rounded-full wave-bar-1"></span>
+<span class="w-1 bg-tertiary-fixed-dim rounded-full wave-bar-2"></span>
+<span class="w-1 bg-tertiary-fixed-dim rounded-full wave-bar-3"></span>
+</div>
+</div>
+<!-- Quality & WebRTC Metrics -->
+<div class="inline-flex items-center gap-1.5 bg-inverse-surface/70 backdrop-blur-md px-space-sm py-space-xs rounded-full font-label-sm text-label-sm text-inverse-on-surface">
+<span class="material-symbols-outlined text-tertiary-fixed-dim text-[16px]">network_ping</span>
+<span id="latencyDisplay">18ms</span>
+<span class="text-outline-variant">•</span>
+<span>HD 60fps</span>
+</div>
+</div>
+<!-- Local Video Tile (Self: You) - Picture in Picture -->
+<div class="relative z-10 self-end w-36 sm:w-48 aspect-[4/3] bg-inverse-surface/90 rounded-lg overflow-hidden shadow-2xl border border-white/10 group cursor-pointer" id="pipContainer" title="Click to toggle self camera">
+<div class="relative w-full h-full bg-surface-container flex flex-col items-center justify-center p-space-sm text-center" id="localVideoFeed">
+<!-- When Camera is OFF -->
+<div class="flex flex-col items-center justify-center text-on-surface-variant transition-opacity" id="localCameraOffView">
+<span class="material-symbols-outlined text-[28px] text-outline group-hover:text-primary transition-colors">no_photography</span>
+<span class="font-label-sm text-label-sm font-semibold mt-1">Your Camera Off</span>
+<span class="text-[9px] text-outline line-clamp-1 mt-0.5">Click cam below or here</span>
+</div>
+<!-- Real User Video Stream & Fallback Selfie Preview -->
+<video autoplay="" class="hidden absolute inset-0 w-full h-full object-cover -scale-x-100" id="localRealVideo" muted="" playsinline=""></video>
+<div class="hidden absolute inset-0 w-full h-full" id="localCameraOnView">
+<img class="w-full h-full object-cover" data-alt="Selfie POV" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCeFkaQVHnXA7vEzsReEVPTrGd_e3Fi6rjWQnCNh5EzZkb_7x5G1QDJWQs_w4icWQCWUATL2JcBrcYQvYZspgU4D9UkXrmLQ3J384EVKQ7wRiOMDAOD1F6f1pqDZMlIujEsaVGYC2PPebhzYNDenBh22aec-gQsp6shOcjYX8NBfssVRETRPPsW3xsSa74EB8FHD4Iu3mYt-4r59Pjx0KNd6uqXi6TmMAgNHjiAT7gfKhZN2FPSUD8zmw"/>
+<span class="absolute bottom-1 left-2 font-label-sm text-[10px] text-inverse-on-surface font-bold bg-inverse-surface/60 px-1 rounded">You</span>
+</div>
+<span class="hidden absolute bottom-1 left-2 font-label-sm text-[10px] text-white font-bold bg-black/60 px-1.5 py-0.5 rounded backdrop-blur-sm z-20" id="pipLabel">You (Live)</span>
+</div>
+</div>
+<!-- Docked Floating Call Controls Bottom Center -->
+<div class="relative z-10 w-full flex items-center justify-center gap-space-md pt-space-xs">
+<div class="inline-flex items-center gap-space-sm bg-inverse-surface/85 backdrop-blur-lg px-space-md py-space-xs rounded-full shadow-lg">
+<!-- Microphone Button -->
+<button class="flex items-center justify-center w-11 h-11 rounded-full bg-surface-container-lowest/15 text-inverse-on-surface hover:bg-surface-container-lowest/30 transition-all active:scale-90 cursor-pointer" id="micToggleBtn" title="Toggle Microphone">
+<span class="material-symbols-outlined text-[22px]" id="micIcon">mic</span>
+</button>
+<!-- Camera Button -->
+<button class="flex items-center justify-center w-11 h-11 rounded-full bg-surface-container-lowest/15 text-inverse-on-surface hover:bg-surface-container-lowest/30 transition-all active:scale-90 cursor-pointer" id="camToggleBtn" title="Toggle Camera">
+<span class="material-symbols-outlined text-[22px]" id="camIcon">videocam_off</span>
+</button>
+<!-- Remote Stream Privacy Toggle -->
+<button class="flex items-center justify-center w-11 h-11 rounded-full bg-surface-container-lowest/15 text-inverse-on-surface hover:bg-surface-container-lowest/30 transition-all active:scale-90 cursor-pointer" id="remotePrivacyToggle" title="Hide/Show Partner Video">
+<span class="material-symbols-outlined text-[22px]" id="privacyIcon">visibility</span>
+</button>
+</div>
+</div>
+</div>
+<!-- System Privacy & Audio Notice -->
+<div class="w-full bg-surface-container-low rounded-lg p-space-md flex items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm min-w-0">
+<span class="material-symbols-outlined text-primary text-[22px] flex-shrink-0">shield</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant truncate">Direct WebRTC stream. Video and audio are peer-to-peer and never stored on any server.</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary font-bold flex-shrink-0">Encrypted</span>
+</div>
+</div>
+<!-- RIGHT: Clean 1-on-1 Text Chat Feed (5 cols) -->
+<div class="lg:col-span-5 flex flex-col h-[640px] bg-surface-container-lowest rounded-xl shadow-md overflow-hidden">
+<!-- Chat Channel Header Bar -->
+<div class="px-space-md py-space-sm bg-surface-container-low flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span>
+<span class="font-label-md text-label-md font-bold text-on-surface">Conversation Log</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline font-mono" id="chatSessionId">ID: #vb-8842</span>
+</div>
+<!-- Chat Stream Messages -->
+<div class="flex-1 overflow-y-auto p-space-md flex flex-col gap-space-md scroll-smooth" id="chatFeed">
+<!-- System Welcome Banner -->
+<div class="w-full bg-surface-container rounded-lg p-space-sm text-center" id="systemWelcomeBanner">
+<p class="font-body-sm text-body-sm text-on-surface font-medium" id="welcomeText">
+              You're now chatting with <span class="font-bold text-primary" id="welcomePeerName">Luna</span>! Say hello 👋
+            </p>
+<p class="font-label-sm text-label-sm text-on-surface-variant mt-0.5">
+              Camera &amp; mic are completely optional. Be kind &amp; respect boundaries.
+            </p>
+</div>
+<!-- Remote Message 1 -->
+<div class="flex flex-col items-start max-w-[85%]">
+<div class="bg-surface-container-low text-on-surface rounded-2xl rounded-bl-sm p-space-md shadow-sm">
+<p class="font-body-md text-body-md" id="initialPartnerMsg1">Hey there! How is your day going? Just stumbled onto VIBE while taking a coffee break ☕</p>
+</div>
+<span class="font-label-sm text-[10px] text-outline mt-1 ml-1" id="initialMsgStamp1">Luna • 14:02</span>
+</div>
+<!-- Outgoing Message (You) -->
+<div class="flex flex-col items-end self-end max-w-[85%]">
+<div class="bg-primary text-on-primary rounded-2xl rounded-br-sm p-space-md shadow-md">
+<p class="font-body-md text-body-md">Hey Luna! Doing great, working on some design concepts today. Cool to meet people around the globe spontaneously.</p>
+</div>
+<span class="font-label-sm text-[10px] text-outline mt-1 mr-1">You • 14:03</span>
+</div>
+<!-- Remote Message 2 -->
+<div class="flex flex-col items-start max-w-[85%]">
+<div class="bg-surface-container-low text-on-surface rounded-2xl rounded-bl-sm p-space-md shadow-sm">
+<p class="font-body-md text-body-md" id="initialPartnerMsg2">Nice! Are you in Europe as well? The ping between us is super low!</p>
+</div>
+<span class="font-label-sm text-[10px] text-outline mt-1 ml-1" id="initialMsgStamp2">Luna • 14:03</span>
+</div>
+<!-- Typing Indicator (Live simulation) -->
+<div class="hidden flex items-center gap-space-xs text-on-surface-variant py-space-xs" id="typingIndicator">
+<div class="flex items-center gap-1 bg-surface-container-low px-space-sm py-1 rounded-full">
+<span class="w-1.5 h-1.5 bg-primary rounded-full animate-bounce"></span>
+<span class="w-1.5 h-1.5 bg-primary rounded-full animate-bounce delay-100"></span>
+<span class="w-1.5 h-1.5 bg-primary rounded-full animate-bounce delay-200"></span>
+<span class="font-label-sm text-label-sm ml-1 text-on-surface-variant" id="typingLabel">Luna is typing...</span>
+</div>
+</div>
+</div>
+<!-- Chat Composer Dock -->
+<div class="p-space-md bg-surface-container-lowest">
+<form class="flex items-center gap-space-xs bg-surface-container-low rounded-full px-space-md py-1.5 focus-within:ring-2 focus-within:ring-primary/40 transition-all" id="chatForm">
+<input autocomplete="off" class="w-full bg-transparent text-on-surface placeholder:text-outline focus:outline-none font-body-md text-body-md px-1" id="messageInput" placeholder="Type a message... (Press Enter to send)" type="text"/>
+<button class="flex-shrink-0 w-10 h-10 rounded-full bg-primary text-on-primary hover:bg-primary-container transition-all flex items-center justify-center shadow-md active:scale-90 cursor-pointer" id="sendBtn" title="Send message" type="submit">
+<span class="material-symbols-outlined text-[20px]">send</span>
+</button>
+</form>
+<div class="flex items-center justify-between mt-space-xs px-space-sm text-outline font-label-sm text-[11px]">
+<span>End-to-End direct data channel</span>
+<span>Esc = Skip • Enter = Send</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Bottom Quick Action Bar -->
+<div class="w-full mt-gutter bg-surface-container-lowest rounded-xl p-space-md shadow-sm flex flex-col sm:flex-row items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-3 h-3 rounded-full bg-tertiary animate-ping"></div>
+<div class="flex flex-col">
+<span class="font-label-md text-label-md font-bold text-on-surface">Quick Navigation Hub</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Skip immediately to encounter another random soul or disconnect safely.</span>
+</div>
+</div>
+<div class="flex items-center gap-space-md w-full sm:w-auto">
+<button class="flex-1 sm:flex-none inline-flex items-center justify-center gap-2 px-space-xl py-space-sm rounded-full bg-primary text-on-primary hover:bg-primary-container transition-all font-headline-md text-headline-md font-bold shadow-md hover:shadow-xl active:scale-95 cursor-pointer" id="bottomSkipBtn">
+<span class="material-symbols-outlined text-[24px]">skip_next</span>
+<span>Skip (ESC)</span>
+</button>
+<button class="flex-1 sm:flex-none inline-flex items-center justify-center gap-2 px-space-lg py-space-sm rounded-full bg-error-container text-on-error-container hover:bg-error hover:text-on-error transition-all font-label-lg text-label-lg font-bold shadow-sm active:scale-95 cursor-pointer" id="bottomEndBtn">
+<span class="material-symbols-outlined text-[20px]">call_end</span>
+<span>End Chat</span>
+</button>
+</div>
+</div>
+<!-- Skip / Search Overlay Modal (Simulated Reconnecting) -->
+<div class="hidden fixed inset-0 z-50 bg-inverse-surface/80 backdrop-blur-md flex items-center justify-center p-gutter transition-all" id="skipModal">
+<div class="bg-surface-container-lowest rounded-xl max-w-md w-full p-space-xl shadow-2xl flex flex-col items-center text-center animate-in fade-in zoom-in-95">
+<div class="relative w-20 h-20 mb-space-md flex items-center justify-center">
+<span class="w-full h-full rounded-full border-4 border-primary/20 border-t-primary animate-spin absolute inset-0"></span>
+<span class="material-symbols-outlined text-primary text-[36px]">travel_explore</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg font-bold text-on-surface" id="modalHeading">Skipping to Next Match...</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs" id="modalSubtitle">
+          Searching for available live peer among 28,400+ online members...
+        </p>
+<div class="w-full bg-surface-container rounded-full h-2 mt-space-lg overflow-hidden">
+<div class="bg-primary h-full w-2/3 animate-pulse"></div>
+</div>
+<button class="mt-space-lg px-space-lg py-space-xs rounded-full bg-surface-container-highest text-on-surface font-label-md text-label-md hover:bg-surface-dim transition-all cursor-pointer" id="cancelSearchBtn">
+          Cancel Search
+        </button>
+</div>
+</div>
+<!-- End Chat Confirmation / Match Ended Modal -->
+<div class="hidden fixed inset-0 z-50 bg-inverse-surface/80 backdrop-blur-md flex items-center justify-center p-gutter" id="endChatModal">
+<div class="bg-surface-container-lowest rounded-xl max-w-md w-full p-space-xl shadow-2xl flex flex-col items-center text-center">
+<div class="w-16 h-16 rounded-full bg-error-container text-error flex items-center justify-center mb-space-md shadow-inner">
+<span class="material-symbols-outlined text-[32px]">call_end</span>
+</div>
+<h2 class="font-headline-lg text-headline-lg font-bold text-on-surface">Chat Session Ended</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-space-xs">
+    Your connection has been safely terminated. All temporary session traces and media streams have been cleared.
+  </p>
+<div class="flex flex-col sm:flex-row items-center gap-space-sm w-full mt-space-lg">
+<button class="w-full sm:flex-1 py-space-sm px-space-md rounded-full bg-primary text-on-primary hover:bg-primary-container font-label-lg text-label-lg font-bold transition-all shadow-md active:scale-95 cursor-pointer flex items-center justify-center gap-1.5" id="modalNewMatchBtn">
+<span class="material-symbols-outlined text-[18px]">autorenew</span>
+<span>Start New Match</span>
+</button>
+<button class="w-full sm:flex-1 py-space-sm px-space-md rounded-full bg-surface-container-highest text-on-surface hover:bg-surface-dim font-label-lg text-label-lg transition-all active:scale-95 cursor-pointer" id="modalReturnHomeBtn">
+    Return to Home
+  </button>
+</div>
+</div>
+</div>
+</div>
+<script>
+    (function initVibeChat() {
+      // Available random peers catalog for skipping
+      const PEER_CATALOG = [
+        {
+          name: "Liam",
+          badge: "✨",
+          location: "London, UK (820km)",
+          avatar: "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=400&q=80",
+          streamImg: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=1200&q=80",
+          ping: 24,
+          firstMessage: "Hey! What's up? Just tuning in from cold rainy London with some Earl Grey ☕"
+        },
+        {
+          name: "Elena",
+          badge: "🌸",
+          location: "Tokyo, JP (9,100km)",
+          avatar: "https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=400&q=80",
+          streamImg: "https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&fit=crop&w=1200&q=80",
+          ping: 112,
+          firstMessage: "Kon'nichiwa! 🌸 Cool interface here. Are you having a productive day?"
+        },
+        {
+          name: "Alex",
+          badge: "⚡",
+          location: "Toronto, CA (6,400km)",
+          avatar: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=400&q=80",
+          streamImg: "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=1200&q=80",
+          ping: 78,
+          firstMessage: "Yo! Great to connect with fellow digital wanderers. What projects are you hacking on?"
+        },
+        {
+          name: "Sofia",
+          badge: "🎨",
+          location: "Barcelona, ES (1,500km)",
+          avatar: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=400&q=80",
+          streamImg: "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1200&q=80",
+          ping: 32,
+          firstMessage: "Hola! Beautiful afternoon over here. Do you like travel or design?"
+        },
+        {
+          name: "Luna",
+          badge: "✨",
+          location: "Berlin, DE (340km)",
+          avatar: "https://lh3.googleusercontent.com/aida-public/AB6AXuC9EUC6UElgXloKexYqjVR5u1b0Lchu2z756xP4F9gX4obRJOyDw-lZUX6VcKIv8qblmO2KQoOePkVzyqVZ-PlZqcokeneNPJj7pJns8xLGbbboBb73rqb2U7d603RdcF5Ex6rNv1goMqs3NMBwqAFe6YrozhT-rj1wiFyHwx0jRUJaxtPWEydxo8Ullhq4BBn4xlfl-lj995ldybp213-vfA72NzgsTd21p77ukvLKp3XH9w2qqaMZ5w",
+          streamImg: "https://lh3.googleusercontent.com/aida-public/AB6AXuBro5yI50gS0K96HA7HIAT85Q2c1BOl4lgzHMNJm4NbEvPalI0zsyseR1C1RVCb6cY4i8d7wfZFcImm0vWoUIey9AoMXSdFDNGJiVsiKbPk_t07y_hAydN0SiDwPiSE89fhAsEm2Pxzg3N3oc_Ba3JOOQEl6wEUVg51pyu4HAdj8f_Cp-Tk-m8As6l7Rdi79EbgjbeAmcxzGuxSsQlQlJ8-rYltRJl2M2aF3LoYyN-RX2rKUx-FcVw86w",
+          ping: 18,
+          firstMessage: "Hey there! How is your day going? Just stumbled onto VIBE while taking a coffee break ☕"
+        }
+      ];
+
+      let currentPeerIndex = 4; // Starts at Luna
+
+      // Elements
+      const chatForm = document.getElementById('chatForm');
+      const messageInput = document.getElementById('messageInput');
+      const chatFeed = document.getElementById('chatFeed');
+      const typingIndicator = document.getElementById('typingIndicator');
+      const typingLabel = document.getElementById('typingLabel');
+      
+      const micBtn = document.getElementById('micToggleBtn');
+      const micIcon = document.getElementById('micIcon');
+      const camBtn = document.getElementById('camToggleBtn');
+      const camIcon = document.getElementById('camIcon');
+      const pipContainer = document.getElementById('pipContainer');
+      const localCameraOff = document.getElementById('localCameraOffView');
+      const localRealVideo = document.getElementById('localRealVideo');
+      const localCameraOnView = document.getElementById('localCameraOnView');
+      const pipLabel = document.getElementById('pipLabel');
+      
+      const remotePrivacyToggle = document.getElementById('remotePrivacyToggle');
+      const remotePlaceholder = document.getElementById('remoteVideoPlaceholder');
+      const remoteAvatar = document.getElementById('remoteAvatarPlaceholder');
+      const privacyIcon = document.getElementById('privacyIcon');
+      const audioWaveContainer = document.getElementById('audioWaveContainer');
+
+      const topSkipBtn = document.getElementById('topSkipBtn');
+      const bottomSkipBtn = document.getElementById('bottomSkipBtn');
+      const topEndBtn = document.getElementById('topEndBtn');
+      const bottomEndBtn = document.getElementById('bottomEndBtn');
+      const skipModal = document.getElementById('skipModal');
+      const cancelSearchBtn = document.getElementById('cancelSearchBtn');
+      const endChatModal = document.getElementById('endChatModal');
+      const modalNewMatchBtn = document.getElementById('modalNewMatchBtn');
+      const modalReturnHomeBtn = document.getElementById('modalReturnHomeBtn');
+
+      const peerHeaderAvatar = document.getElementById('peerHeaderAvatar');
+      const peerHeaderName = document.getElementById('peerHeaderName');
+      const peerHeaderMeta = document.getElementById('peerHeaderMeta');
+      const videoOverlayPeerName = document.getElementById('videoOverlayPeerName');
+      const welcomePeerName = document.getElementById('welcomePeerName');
+      const latencyDisplay = document.getElementById('latencyDisplay');
+      const chatSessionId = document.getElementById('chatSessionId');
+      const remoteCamOffTitle = document.getElementById('remoteCamOffTitle');
+      const remoteCamOffDesc = document.getElementById('remoteCamOffDesc');
+
+      let localMediaStream = null;
+      let isMicMuted = false;
+      let isCamActive = false;
+      let isRemoteVideoVisible = true;
+      let replyTimer = null;
+      let searchTimeout = null;
+
+      // 1. Microphone Toggle Feature
+      function updateMicUI(enabled) {
+        if (enabled) {
+          micIcon.textContent = 'mic';
+          micBtn.classList.remove('bg-error', 'text-on-error');
+          micBtn.classList.add('bg-surface-container-lowest/15', 'text-inverse-on-surface');
+          micBtn.title = "Mute Microphone";
+        } else {
+          micIcon.textContent = 'mic_off';
+          micBtn.classList.remove('bg-surface-container-lowest/15', 'text-inverse-on-surface');
+          micBtn.classList.add('bg-error', 'text-on-error');
+          micBtn.title = "Unmute Microphone";
+        }
+      }
+
+      micBtn.addEventListener('click', () => {
+        if (localMediaStream && localMediaStream.getAudioTracks().length > 0) {
+          isMicMuted = !isMicMuted;
+          localMediaStream.getAudioTracks().forEach(track => {
+            track.enabled = !isMicMuted;
+          });
+          updateMicUI(!isMicMuted);
+        } else {
+          // If no media stream currently requested, simulate mute toggle state
+          isMicMuted = !isMicMuted;
+          updateMicUI(!isMicMuted);
+        }
+      });
+
+      // 2. Camera Controls & getUserMedia Implementation
+      async function enableCamera() {
+        try {
+          if (!localMediaStream) {
+            // Request user webcam
+            const stream = await navigator.mediaDevices.getUserMedia({
+              video: { facingMode: "user", width: { ideal: 640 }, height: { ideal: 480 } },
+              audio: true
+            });
+            localMediaStream = stream;
+            localRealVideo.srcObject = stream;
+            localRealVideo.classList.remove('hidden');
+            localCameraOnView.classList.add('hidden');
+          } else {
+            // Re-enable tracks if existing
+            localMediaStream.getVideoTracks().forEach(track => track.enabled = true);
+            localRealVideo.classList.remove('hidden');
+          }
+          isCamActive = true;
+          localCameraOff.classList.add('hidden');
+          pipLabel.classList.remove('hidden');
+          camIcon.textContent = 'videocam';
+          camBtn.classList.remove('bg-surface-container-lowest/15', 'text-inverse-on-surface');
+          camBtn.classList.add('bg-tertiary-container', 'text-on-tertiary-container');
+        } catch (err) {
+          console.warn('Real webcam stream unavailable or denied, falling back to simulated camera feed:', err);
+          // Fallback gracefully to simulated active feed
+          isCamActive = true;
+          localCameraOff.classList.add('hidden');
+          localRealVideo.classList.add('hidden');
+          localCameraOnView.classList.remove('hidden');
+          pipLabel.classList.remove('hidden');
+          camIcon.textContent = 'videocam';
+          camBtn.classList.remove('bg-surface-container-lowest/15', 'text-inverse-on-surface');
+          camBtn.classList.add('bg-tertiary-container', 'text-on-tertiary-container');
+        }
+      }
+
+      function disableCamera() {
+        if (localMediaStream) {
+          localMediaStream.getVideoTracks().forEach(track => {
+            track.stop();
+          });
+          localMediaStream = null;
+          localRealVideo.srcObject = null;
+        }
+        isCamActive = false;
+        localRealVideo.classList.add('hidden');
+        localCameraOnView.classList.add('hidden');
+        localCameraOff.classList.remove('hidden');
+        pipLabel.classList.add('hidden');
+        camIcon.textContent = 'videocam_off';
+        camBtn.classList.remove('bg-tertiary-container', 'text-on-tertiary-container');
+        camBtn.classList.add('bg-surface-container-lowest/15', 'text-inverse-on-surface');
+      }
+
+      function stopAllMedia() {
+        if (localMediaStream) {
+          localMediaStream.getTracks().forEach(t => t.stop());
+          localMediaStream = null;
+          localRealVideo.srcObject = null;
+        }
+        isCamActive = false;
+        isMicMuted = false;
+        updateMicUI(true);
+        disableCamera();
+      }
+
+      camBtn.addEventListener('click', () => {
+        if (!isCamActive) {
+          enableCamera();
+        } else {
+          disableCamera();
+        }
+      });
+
+      // Clicking PIP thumbnail toggles cam
+      pipContainer.addEventListener('click', (e) => {
+        if (!isCamActive) {
+          enableCamera();
+        }
+      });
+
+      // Remote Video stream toggle
+      remotePrivacyToggle.addEventListener('click', () => {
+        isRemoteVideoVisible = !isRemoteVideoVisible;
+        const currentPeer = PEER_CATALOG[currentPeerIndex];
+        if (isRemoteVideoVisible) {
+          remotePlaceholder.classList.remove('hidden');
+          remoteAvatar.classList.add('hidden');
+          remoteAvatar.classList.remove('flex');
+          privacyIcon.textContent = 'visibility';
+          audioWaveContainer.classList.remove('opacity-0');
+        } else {
+          remotePlaceholder.classList.add('hidden');
+          remoteAvatar.classList.remove('hidden');
+          remoteAvatar.classList.add('flex');
+          remoteCamOffTitle.textContent = "Camera is off";
+          remoteCamOffDesc.textContent = `${currentPeer.name} is connected in spontaneous text mode`;
+          privacyIcon.textContent = 'visibility_off';
+          audioWaveContainer.classList.add('opacity-0');
+        }
+      });
+
+      // 3. Interactive Live Chat: Sending & Dynamic Bot Responses
+      const partnerContextResponses = [
+        "That's so interesting! Tell me more about what inspired that.",
+        "Haha totally agree! By the way, what kind of music do you listen to while working?",
+        "No way, really? That's actually super rare to hear. Where did you learn that?",
+        "Awesome! I'm actually studying interactive design myself. What city are you located in?",
+        "That sounds like a vibe! Do you chat here often or is this your first time?",
+        "I was thinking the exact same thing! Instant connection without clutter is unmatched.",
+        "Haha love that energy! Any favorite spots you'd recommend traveling to?"
+      ];
+
+      function escapeHtml(unsafe) {
+        return unsafe
+          .replace(/&/g, "&amp;")
+          .replace(/</g, "&lt;")
+          .replace(/>/g, "&gt;")
+          .replace(/"/g, "&quot;")
+          .replace(/'/g, "&#039;");
+      }
+
+      function appendUserMessage(text) {
+        const time = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+        const wrapper = document.createElement('div');
+        wrapper.className = 'flex flex-col items-end self-end max-w-[85%] transition-all animate-in fade-in slide-in-from-bottom-2';
+        wrapper.innerHTML = `
+          <div class="bg-primary text-on-primary rounded-2xl rounded-br-sm p-space-md shadow-md">
+            <p class="font-body-md text-body-md">${escapeHtml(text)}</p>
+          </div>
+          <span class="font-label-sm text-[10px] text-outline mt-1 mr-1">You • ${time}</span>
+        `;
+        chatFeed.insertBefore(wrapper, typingIndicator);
+        chatFeed.scrollTop = chatFeed.scrollHeight;
+
+        triggerPartnerReply(text);
+      }
+
+      function triggerPartnerReply(lastUserMessage) {
+        clearTimeout(replyTimer);
+        const currentPeer = PEER_CATALOG[currentPeerIndex];
+        typingLabel.textContent = `${currentPeer.name} is typing...`;
+
+        // Wait 1.1s before showing typing indicator
+        setTimeout(() => {
+          typingIndicator.classList.remove('hidden');
+          chatFeed.scrollTop = chatFeed.scrollHeight;
+          
+          // Animate audio wave visualizer to indicate talking
+          audioWaveContainer.classList.remove('opacity-30');
+          audioWaveContainer.classList.add('opacity-100');
+
+          // Partner replies after 1.8s
+          replyTimer = setTimeout(() => {
+            typingIndicator.classList.add('hidden');
+            const randomReply = partnerContextResponses[Math.floor(Math.random() * partnerContextResponses.length)];
+            const time = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+            
+            const replyWrapper = document.createElement('div');
+            replyWrapper.className = 'flex flex-col items-start max-w-[85%] transition-all animate-in fade-in slide-in-from-bottom-2';
+            replyWrapper.innerHTML = `
+              <div class="bg-surface-container-low text-on-surface rounded-2xl rounded-bl-sm p-space-md shadow-sm">
+                <p class="font-body-md text-body-md">${randomReply}</p>
+              </div>
+              <span class="font-label-sm text-[10px] text-outline mt-1 ml-1">${currentPeer.name} • ${time}</span>
+            `;
+            chatFeed.insertBefore(replyWrapper, typingIndicator);
+            chatFeed.scrollTop = chatFeed.scrollHeight;
+          }, 1800);
+        }, 800);
+      }
+
+      chatForm.addEventListener('submit', (e) => {
+        e.preventDefault();
+        const msg = messageInput.value.trim();
+        if (msg) {
+          appendUserMessage(msg);
+          messageInput.value = '';
+          messageInput.focus();
+        }
+      });
+
+      // 4. Functional "Skip Partner" with 1.5s search overlay & new peer generation
+      function loadPeer(peer) {
+        peerHeaderAvatar.src = peer.avatar;
+        peerHeaderName.textContent = `Connected with ${peer.name} ${peer.badge}`;
+        peerHeaderMeta.textContent = `Anonymous P2P session • ${peer.location}`;
+        videoOverlayPeerName.textContent = peer.name;
+        welcomePeerName.textContent = peer.name;
+        latencyDisplay.textContent = `${peer.ping}ms`;
+        remotePlaceholder.src = peer.streamImg;
+        chatSessionId.textContent = `ID: #vb-${Math.floor(1000 + Math.random() * 9000)}`;
+
+        // Clear previous conversation except system welcome
+        const systemBanner = document.getElementById('systemWelcomeBanner');
+        chatFeed.innerHTML = '';
+        chatFeed.appendChild(systemBanner);
+        chatFeed.appendChild(typingIndicator);
+
+        // Add fresh initial message from new partner
+        const time = new Date().toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+        const initialWrapper = document.createElement('div');
+        initialWrapper.className = 'flex flex-col items-start max-w-[85%] transition-all animate-in fade-in';
+        initialWrapper.innerHTML = `
+          <div class="bg-surface-container-low text-on-surface rounded-2xl rounded-bl-sm p-space-md shadow-sm">
+            <p class="font-body-md text-body-md">${peer.firstMessage}</p>
+          </div>
+          <span class="font-label-sm text-[10px] text-outline mt-1 ml-1">${peer.name} • ${time}</span>
+        `;
+        chatFeed.insertBefore(initialWrapper, typingIndicator);
+        chatFeed.scrollTop = 0;
+      }
+
+      function triggerSkipFlow() {
+        clearTimeout(replyTimer);
+        clearTimeout(searchTimeout);
+        typingIndicator.classList.add('hidden');
+        
+        skipModal.classList.remove('hidden');
+
+        searchTimeout = setTimeout(() => {
+          // Pick next peer cycling through catalog
+          currentPeerIndex = (currentPeerIndex + 1) % PEER_CATALOG.length;
+          loadPeer(PEER_CATALOG[currentPeerIndex]);
+          skipModal.classList.add('hidden');
+        }, 1500);
+      }
+
+      topSkipBtn.addEventListener('click', triggerSkipFlow);
+      bottomSkipBtn.addEventListener('click', triggerSkipFlow);
+
+      cancelSearchBtn.addEventListener('click', () => {
+        clearTimeout(searchTimeout);
+        skipModal.classList.add('hidden');
+      });
+
+      // 5. Functional "End Chat" & Modal
+      function openEndChatModal() {
+        stopAllMedia();
+        endChatModal.classList.remove('hidden');
+      }
+
+      topEndBtn.addEventListener('click', openEndChatModal);
+      bottomEndBtn.addEventListener('click', openEndChatModal);
+
+      modalNewMatchBtn.addEventListener('click', () => {
+        endChatModal.classList.add('hidden');
+        triggerSkipFlow();
+      });
+
+      modalReturnHomeBtn.addEventListener('click', () => {
+        endChatModal.classList.add('hidden');
+        // Reset to first view or soft refresh
+        location.reload();
+      });
+
+      // Keyboard listener: Escape triggers Skip
+      document.addEventListener('keydown', (e) => {
+        if (e.key === 'Escape') {
+          // If modal is open, close it; else trigger skip
+          if (!skipModal.classList.contains('hidden')) {
+            clearTimeout(searchTimeout);
+            skipModal.classList.add('hidden');
+          } else if (!endChatModal.classList.contains('hidden')) {
+            endChatModal.classList.add('hidden');
+          } else {
+            triggerSkipFlow();
+          }
+        }
+      });
+
+      // Dynamic Latency jitter
+      setInterval(() => {
+        const base = PEER_CATALOG[currentPeerIndex].ping;
+        const ping = Math.max(12, base + Math.floor(Math.random() * 6 - 3));
+        if (latencyDisplay) latencyDisplay.textContent = ping + 'ms';
+      }, 4000);
+
+    })();
+  </script>
+</div></main><footer class="w-full bg-surface-container-lowest border-t border-outline-variant py-space-md"><div class="w-full px-margin-sm md:px-margin flex flex-col sm:flex-row items-center justify-between gap-space-sm font-label-sm text-label-sm text-on-surface-variant"><div class="flex items-center gap-space-sm"><span>© 2025 VIBE Global Network.</span><span class="hidden sm:inline">•</span><span class="hidden sm:inline">Instant Peer-to-Peer Encrypted Match.</span></div><div class="flex items-center gap-space-md"><span>Community Guidelines</span><span>Safety &amp; Trust</span><span>Terms</span></div></div></footer></body></html>
